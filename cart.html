@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+
+    <!-- Font awesome icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google font-family-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- CSS style -->
+    <link rel="stylesheet" href="assets\css\universal.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+
+</head>
+<body>
+    <header id="topHeader">
+        <a href="index.html" class="logo"><h2>fashion</h2></a>
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html">home</a></li>
+                <li><a href="shop.html">shop</a></li>
+                <li><a href="blog.html">blog</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="contact.html">contact</a></li>
+                <li><a href="cart.html" class="active"><i class="fa-solid fa-bag-shopping" id="bag"></i></a></li>
+                <i class="fa-solid fa-xmark nav-button" id="exit"></i>
+            </ul>
+        </nav>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i class="fa-solid fa-bars nav-button"></i>
+        </div>
+    </header>
+
+    <section id="page-header" class="contact-h">
+        <h2>#Let's_talk</h2>
+        <p>Leave a Message for Us, We love to hear your review.</p>
+    </section>
+
+    <section id="cart" class="section-pad">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><i class="far fa-times-circle"></i></td>
+                    <td><img src="assets/img/product-1.png" alt=""></td>
+                    <td>Product class name</td>
+                    <td>$430.00</td>
+                    <td><input type="number" value="1" min="1" max="10"></td>
+                    <td>$430.00</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-times-circle"></i></td>
+                    <td><img src="assets/img/product-2.png" alt=""></td>
+                    <td>Product class name</td>
+                    <td>$430.00</td>
+                    <td><input type="number" value="3" min="1" max="10"></td>
+                    <td>$420.00</td>
+                </tr>
+                <tr>
+                    <td><i class="far fa-times-circle"></i></td>
+                    <td><img src="assets/img/product-3.png" alt=""></td>
+                    <td>Product class name</td>
+                    <td>$430.00</td>
+                    <td><input type="number" value="2" min="1" max="10"></td>
+                    <td>$30.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-pad">
+        <div id="coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter Your Coupon">
+                <button>Apply</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart Subtotal</td>
+                    <td>$880</td>
+                </tr>
+                <tr>
+                    <td>Shopping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$880</strong></td>
+                </tr>
+            </table>
+            <button>Proceed to checkout</button>
+        </div>
+    </section>
+
+    <footer id="downFooter" class="section-pad">
+        <div class="col">
+            <a href="#" class="logo"><h2>fashion</h2></a>
+            <h4>Contact</h4>
+            <address>
+                <p><strong>Address:</strong> 123 New Road, Street 1, Province</p>
+                <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+                <p><strong>Hours:</strong> 10:00 - 20:00, Mon - Fri</p>
+            </address>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+           <h4>About</h4>
+           <a href=""><p>About Us</p></a>
+           <a href=""><p>Delivery Information</p></a>
+           <a href=""><p>Privacy Policy</p></a>
+           <a href=""><p>Terms & Conditions</p></a>
+           <a href=""><p>Contact Us</p></a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href=""><p>Sign In</p></a>
+            <a href=""><p>View Cart</p></a>
+            <a href=""><p>My Wishlist</p></a>
+            <a href=""><p>Track My Order</p></a>
+            <a href=""><p>Help</p></a>
+        </div>
+        <div class="col">
+            <h4>Install App</h4>
+            <p>from App Store or Google Play</p>
+            <div class="row" id="store">
+                <img src="assets/img/apple-img.png" alt="Apple Store">
+                <img src="assets/img/google-img.png" alt="Apple Store">
+            </div>
+           <p>Secured Payment Gateways</p>
+           <div class="row">
+                <img src="assets/img/american-express-img.svg" alt="american-express-img">
+                <img src="assets/img/mastercard-img.jpg" alt="mastercard-img">
+                <img src="assets/img/visa-img.png" alt="visa-img">
+                <img src="assets/img/gcash-img.png" alt="gcash-img">
+           </div>
+        </div>
+        <div id="copyright">
+            <p>© 2024, Camar - HTMl CSS Ecommerce Template</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
